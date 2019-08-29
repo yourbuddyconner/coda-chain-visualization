@@ -1,3 +1,51 @@
+# The Query
+```
+{
+    blocks{
+    nodes {
+        creator
+        stateHash
+        protocolState {
+        previousStateHash
+        blockchainState{
+            date
+            snarkedLedgerHash
+            stagedLedgerHash
+        }
+        }
+        transactions {
+        userCommands{
+            id
+            isDelegation
+            nonce
+            from
+            to
+            amount
+            fee
+            memo
+        }
+        feeTransfer {
+            recipient
+            fee
+        }
+        coinbase
+        }
+        snarkJobs {
+        prover
+        fee
+        workIds
+        }
+    }
+    pageInfo {
+        hasNextPage
+        hasPreviousPage
+        firstCursor
+        lastCursor
+    }
+    }
+}
+```
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
@@ -66,3 +114,4 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+

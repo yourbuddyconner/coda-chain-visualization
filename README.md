@@ -6,6 +6,14 @@ This was a quick weekend project that I worked on with my roommate [@reem](https
 
 It is utilizing the [React-Vis-Force](https://github.com/uber/react-vis-force) library from Uber.
 
+# Next Steps / Lessons Learned
+
+This is a super rough MVP to prove to myself that I could write a block explorer/visualization. Here's some stuff I learned if I were to try and do this for real: 
+- React-Vis-Force doesn't allow you to dynamically add and remove nodes in the graph without reloading the whole thing. To accomplish this, I'd have to fork their library or craft my own D3-based react components. 
+- The `blocks` query in the Coda Daemon's GraphQL endponint doesn't *actually* support pagination at the time of writing, so loading the page gets slow as nBlocks increases. Though, even if it did support pagination, you'd still have to load all the blocks first due to #1. 
+- When there's a lot of nodes on the graph, it takes a really long time to work all the crossings out. I wished there was a way I could have laid out the nodes from left-right/top-bottom by their timestamp at render time. 
+- The Archive node's endpoint is *dangerous* in that there is no authentication, so anyone with access could change the Daemon's internal state. As such, this only works when running a Daemon on the same machine as the visualization. I would love to build out a GraphQL Proxy of some kind in order to mitigate this risk. 
+
 # The Query
 
 The application uses one query from the Daemon: 

@@ -13,6 +13,16 @@ This is a super rough MVP to prove to myself that I could write a block explorer
 - The `blocks` query in the Coda Daemon's GraphQL endponint doesn't *actually* support pagination at the time of writing, so loading the page gets slow as nBlocks increases. Though, even if it did support pagination, you'd still have to load all the blocks first due to #1. 
 - When there's a lot of nodes on the graph, it takes a really long time to work all the crossings out. I wished there was a way I could have laid out the nodes from left-right/top-bottom by their timestamp at render time. 
 - The Archive node's endpoint is *dangerous* in that there is no authentication, so anyone with access could change the Daemon's internal state. As such, this only works when running a Daemon on the same machine as the visualization. I would love to build out a GraphQL Proxy of some kind in order to mitigate this risk. 
+- I did implement basic "block explorer" functionality, in that if you select a node a `div` appears with the json data from the block. I would have liked to spend more time displaying this data on the graph itself, via colors or otherwise. 
+- I would love to mess with different colorings on the graph *way* more than I did here. This visualization can be super useful for visually debugging the blockchain by coloring the blocks based on number of transactions, snark jobs, fee transfers, etc. 
+
+### Examples of Different Coloring: 
+
+Red -> Main Chain / Blue -> Leaf Nodes: 
+![colored-by-leaves](docs/assets/colored-by-leaves.png)
+
+Black -> No Txs / Redder -> More Txs
+![colored-by-transactions](docs/assets/colored-by-transactions.png)
 
 # The Query
 

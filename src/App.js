@@ -7,7 +7,8 @@ import Blocks from './block/block';
 function App() {
   return (
     <div className="App">
-      <Blocks/>
+      <Blocks metric={(node) => node.snarkJobs.length}/>
+      {/* <Blocks/> */}
     </div>
   );
 }

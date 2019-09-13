@@ -3,7 +3,7 @@ import gql from 'graphql-tag';
 
 export default graphql(gql`
 query {
-    blocks{
+    blocks(first: 20) {
         nodes {
             creator
             stateHash

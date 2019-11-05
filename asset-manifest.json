@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/Coda-Archive-Explorer/static/css/main.27f54f46.chunk.css",
-    "main.js": "/Coda-Archive-Explorer/static/js/main.58f874c0.chunk.js",
-    "main.js.map": "/Coda-Archive-Explorer/static/js/main.58f874c0.chunk.js.map",
-    "runtime~main.js": "/Coda-Archive-Explorer/static/js/runtime~main.e243a0f8.js",
-    "runtime~main.js.map": "/Coda-Archive-Explorer/static/js/runtime~main.e243a0f8.js.map",
-    "static/js/2.8b70b543.chunk.js": "/Coda-Archive-Explorer/static/js/2.8b70b543.chunk.js",
-    "static/js/2.8b70b543.chunk.js.map": "/Coda-Archive-Explorer/static/js/2.8b70b543.chunk.js.map",
-    "index.html": "/Coda-Archive-Explorer/index.html",
-    "precache-manifest.36115b4fe72b942acbe91070aeadc95b.js": "/Coda-Archive-Explorer/precache-manifest.36115b4fe72b942acbe91070aeadc95b.js",
-    "service-worker.js": "/Coda-Archive-Explorer/service-worker.js",
-    "static/css/main.27f54f46.chunk.css.map": "/Coda-Archive-Explorer/static/css/main.27f54f46.chunk.css.map",
-    "static/media/logo.svg": "/Coda-Archive-Explorer/static/media/logo.5d5d9eef.svg"
+    "main.css": "/coda-chain-visualization/static/css/main.27f54f46.chunk.css",
+    "main.js": "/coda-chain-visualization/static/js/main.1c40fc70.chunk.js",
+    "main.js.map": "/coda-chain-visualization/static/js/main.1c40fc70.chunk.js.map",
+    "runtime~main.js": "/coda-chain-visualization/static/js/runtime~main.56d90dc7.js",
+    "runtime~main.js.map": "/coda-chain-visualization/static/js/runtime~main.56d90dc7.js.map",
+    "static/js/2.8b70b543.chunk.js": "/coda-chain-visualization/static/js/2.8b70b543.chunk.js",
+    "static/js/2.8b70b543.chunk.js.map": "/coda-chain-visualization/static/js/2.8b70b543.chunk.js.map",
+    "index.html": "/coda-chain-visualization/index.html",
+    "precache-manifest.66823c75f31e447244fbe989adc63137.js": "/coda-chain-visualization/precache-manifest.66823c75f31e447244fbe989adc63137.js",
+    "service-worker.js": "/coda-chain-visualization/service-worker.js",
+    "static/css/main.27f54f46.chunk.css.map": "/coda-chain-visualization/static/css/main.27f54f46.chunk.css.map",
+    "static/media/logo.svg": "/coda-chain-visualization/static/media/logo.5d5d9eef.svg"
   }
 }
